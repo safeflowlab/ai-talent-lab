@@ -1,0 +1,243 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI재능나눔 LAB v9</title><style>
+:root{--bg:#f5f7fb;--panel:#fff;--ink:#171b2d;--muted:#697386;--line:#e6eaf0;--v:#6d5dfc;--v2:#8c7cff;--soft:#f1efff;--green:#118b67;--gb:#eaf8f3;--amber:#b77400;--ab:#fff5df;--red:#c93b4b;--rb:#fff0f2;--shadow:0 16px 44px rgba(24,35,62,.08)}*{box-sizing:border-box}body{margin:0;font-family:Inter,Pretendard,'Noto Sans KR','Apple SD Gothic Neo',system-ui,sans-serif;background:linear-gradient(180deg,#fafaff,#f4f7fb 35%,#edf2f7);color:var(--ink)}button,input,textarea,select{font:inherit}button{cursor:pointer}.shell{max-width:1180px;margin:auto;padding:18px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px;position:sticky;top:0;z-index:20;padding:10px 0;background:rgba(245,247,251,.9);backdrop-filter:blur(10px)}.brand{display:flex;gap:10px;align-items:center;font-weight:900}.logo{width:42px;height:42px;border-radius:15px;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,var(--v),var(--v2));box-shadow:0 10px 24px rgba(109,93,252,.25)}.nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.btn{border:0;border-radius:14px;padding:11px 15px;font-weight:900;display:inline-flex;gap:7px;align-items:center;justify-content:center}.violet{background:var(--v);color:#fff}.dark{background:var(--ink);color:#fff}.ghost{background:#fff;border:1px solid var(--line);color:var(--ink)}.danger{background:var(--rb);color:var(--red);border:1px solid #ffd7dc}.small{padding:7px 10px;border-radius:10px;font-size:12px}.hero{background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:var(--shadow)}.hero h1{font-size:44px;line-height:1.08;margin:14px 0 10px;letter-spacing:-.04em}.hero p{color:var(--muted);font-size:17px;line-height:1.7;max-width:780px}.eyebrow{display:inline-flex;padding:7px 10px;border-radius:999px;background:var(--soft);color:var(--v);font-weight:900;font-size:12px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 14px}.chip{border:1px solid var(--line);background:#fff;padding:9px 12px;border-radius:999px;font-weight:900}.chip.active{background:var(--ink);color:#fff}.board{display:grid;gap:12px}.post{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 7px 24px rgba(24,35,62,.045)}.post-top{display:flex;justify-content:space-between;gap:16px;align-items:flex-start}.post h3{margin:8px 0 7px;font-size:21px}.post p{margin:0;color:var(--muted);line-height:1.6}.status{display:inline-flex;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:900}.open{background:#eef6ff;color:#3565a8}.active{background:var(--ab);color:var(--amber)}.done{background:var(--gb);color:var(--green)}.hiddenstatus{background:#f3f4f6;color:#6b7280}.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}.tag{padding:6px 8px;border-radius:999px;background:#f3f5f8;font-size:11px;font-weight:900}.post-footer{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:15px;padding-top:13px;border-top:1px solid var(--line)}.people{display:flex;gap:5px;align-items:center;flex-wrap:wrap}.avatar{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--soft);color:var(--v);font-size:11px;font-weight:900;border:2px solid #fff}.meta{font-size:12px;color:var(--muted);font-weight:800}.view{display:none}.view.show{display:block}.project-head{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:var(--shadow)}.project-head h2{font-size:31px;margin:12px 0 7px}.project-head p{color:var(--muted);line-height:1.65}.project-meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:15px;padding-top:14px;border-top:1px solid var(--line)}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0}.tab{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 13px;font-weight:900}.tab.on{background:var(--ink);color:#fff}.layout{display:grid;grid-template-columns:1fr 310px;gap:16px}.panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px}.panel+.panel{margin-top:14px}.panel h3{margin:0 0 12px}.innerpost{border:1px solid var(--line);border-radius:16px;padding:14px;margin-top:9px;background:#fcfdff}.innerpost strong{display:block;margin-bottom:5px}.innerpost p{color:var(--muted);line-height:1.55;margin:6px 0}.kind{display:inline-flex;padding:5px 7px;border-radius:999px;background:#f1f3f6;font-size:10px;font-weight:900;margin-bottom:6px}.form{display:grid;gap:9px;margin-top:12px}input,textarea,select{width:100%;border:1px solid var(--line);border-radius:13px;padding:11px 12px;background:#fff}textarea{min-height:100px;resize:vertical}.member{display:flex;justify-content:space-between;align-items:center;gap:8px;border:1px solid var(--line);border-radius:14px;padding:10px;margin-top:8px;background:#fcfdff}.modal{position:fixed;inset:0;background:rgba(13,18,30,.46);display:none;align-items:center;justify-content:center;padding:20px;z-index:50}.modal.show{display:flex}.modalbox{width:min(680px,100%);max-height:92vh;overflow:auto;background:#fff;border-radius:24px;padding:22px;box-shadow:0 28px 80px rgba(0,0,0,.22)}.talent-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.talent{border:1px solid var(--line);background:#fff;border-radius:13px;padding:10px;font-weight:900;text-align:left}.talent.on{background:var(--soft);border-color:#a79cff;color:#5648d8}.authbox{display:grid;grid-template-columns:1fr 1fr;gap:12px}.authpane{border:1px solid var(--line);border-radius:18px;padding:16px;background:#fcfdff}.authpane h3{margin-top:0}.notice{padding:12px 14px;border-radius:14px;background:#fff7df;border:1px solid #ffe5a2;color:#8a6500;font-size:12px;line-height:1.6}.account{position:relative}.accountmenu{position:absolute;right:0;top:48px;width:220px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px;box-shadow:var(--shadow);display:none}.accountmenu.show{display:block}.accountmenu button{width:100%;text-align:left}.admin-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px}.stat b{display:block;font-size:26px}.stat span{font-size:12px;color:var(--muted);font-weight:800}.table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}.table th,.table td{padding:12px;border-bottom:1px solid var(--line);text-align:left;font-size:13px}.table th{background:#f8fafc}.badge{display:inline-flex;padding:5px 8px;border-radius:999px;background:#f3f5f8;font-size:11px;font-weight:900}.role-admin{background:#fff0f2;color:#b4233a}.role-member{background:#eef6ff;color:#3565a8}.attachment{margin-top:10px;border:1px solid var(--line);border-radius:14px;padding:10px;background:#fff}.attachment img{display:block;max-width:100%;max-height:420px;border-radius:10px;margin-bottom:8px;object-fit:contain;background:#f6f7fb}.attachment a{font-weight:900;text-decoration:none;color:#5648d8}.upload-note{font-size:11px;color:var(--muted);line-height:1.5}.hidden{display:none!important}@media(max-width:860px){.layout{grid-template-columns:1fr}.post-top{flex-direction:column}.post-footer{align-items:flex-start;flex-direction:column}.authbox{grid-template-columns:1fr}.admin-grid{grid-template-columns:1fr 1fr}}@media(max-width:620px){.shell{padding:12px}.hero h1{font-size:36px}.talent-grid{grid-template-columns:1fr 1fr}.admin-grid{grid-template-columns:1fr}.top{align-items:flex-start}}
+</style></head><body><div class="shell"><div class="top"><div class="brand"><div class="logo">AI</div><div>AI재능나눔 LAB</div></div><div class="nav"><button class="btn ghost small" onclick="showHome()">문제 게시판</button><button id="adminNav" class="btn ghost small hidden" onclick="showAdmin()">관리자</button><button class="btn violet small" onclick="requireLogin(openProblemModal)">+ 문제 올리기</button><div class="account"><button id="accountBtn" class="btn dark small" onclick="toggleAccount()">로그인</button><div id="accountMenu" class="accountmenu"></div></div></div></div>
+<main id="home" class="view show"><section class="hero"><span class="eyebrow">문제 게시판 → 참여 → 프로젝트방</span><h1>문제를 올리고,<br>사람이 모이면 프로젝트가 시작됩니다.</h1><p>회원은 문제를 제안하고 참여할 수 있고, 프로젝트 안에서 작업·결과물·피드백을 나눕니다. 관리자는 전체 흐름을 관리합니다.</p></section><div class="filters" id="filters"></div><section class="board" id="board"></section></main>
+<main id="project" class="view"><section class="project-head"><button class="btn ghost small" onclick="showHome()">← 문제 게시판</button><div id="pStatus" class="status open" style="margin-top:14px"></div><h2 id="pTitle"></h2><p id="pDesc"></p><div class="tags" id="pTags"></div><div class="project-meta"><div class="people" id="pPeople"></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button id="joinBtn" class="btn violet" onclick="requireLogin(()=>joinCurrent())">🙋 참여하고 들어가기</button><button id="completeBtn" class="btn ghost hidden" onclick="toggleComplete()">완료 처리</button></div></div></section><div class="tabs"><button class="tab on" onclick="switchTab('feed',this)">프로젝트 게시판</button><button class="tab" onclick="switchTab('files',this)">자료 / 결과물</button><button class="tab" onclick="switchTab('members',this)">참여자</button></div><div class="layout"><div><section id="feed" class="pane panel"><h3>🧩 프로젝트 게시판</h3><div id="innerBoard"></div><div id="innerPostForm" class="form"><select id="innerKind"><option>작업</option><option>자료</option><option>결과물</option><option>피드백</option><option>도움필요</option><option>공지</option></select><input id="innerTitle" placeholder="글 제목"><textarea id="innerBody" placeholder="내용을 적어주세요."></textarea><input id="innerLink" placeholder="링크가 있다면 붙여주세요"><input id="innerFile" type="file" accept="image/*,.pdf,.txt,.zip,.doc,.docx,.xls,.xlsx,.ppt,.pptx"><div class="upload-note">이미지·PDF·문서·ZIP 첨부 가능 · 파일당 최대 10MB</div><button id="innerSubmitBtn" class="btn dark" onclick="requireLogin(addInnerPost)">글 올리기</button></div></section><section id="files" class="pane panel hidden"><h3>📦 자료 / 결과물 모음</h3><div id="fileBoard"></div></section><section id="members" class="pane panel hidden"><h3>👥 참여자</h3><div id="memberBoard"></div></section></div><aside><section class="panel"><h3>현재 상태</h3><div id="sideStatus"></div></section><section class="panel"><h3>필요한 재능</h3><div id="sideTalents" class="tags"></div></section></aside></div></main>
+<main id="admin" class="view"><section class="hero"><span class="eyebrow">관리자 전용</span><h1>LAB 운영 현황</h1><p>회원, 문제글, 프로젝트 상태를 한곳에서 관리합니다.</p></section><div class="admin-grid"><div class="stat"><b id="aUsers">0</b><span>회원</span></div><div class="stat"><b id="aProblems">0</b><span>문제글</span></div><div class="stat"><b id="aActive">0</b><span>진행 중 프로젝트</span></div><div class="stat"><b id="aHidden">0</b><span>숨김 글</span></div></div><section class="panel"><h3>회원 관리</h3><div style="overflow:auto"><table class="table"><thead><tr><th>이름</th><th>이메일</th><th>역할</th><th>상태</th><th>관리</th></tr></thead><tbody id="userRows"></tbody></table></div></section><section class="panel"><h3>문제 / 프로젝트 관리</h3><div style="overflow:auto"><table class="table"><thead><tr><th>제목</th><th>작성자</th><th>상태</th><th>참여</th><th>관리</th></tr></thead><tbody id="problemRows"></tbody></table></div></section></main></div>
+<div class="modal" id="problemModal"><div class="modalbox"><div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0">🌱 문제 올리기</h2><button class="btn ghost" onclick="closeProblemModal()">닫기</button></div><div class="form"><input id="newTitle" placeholder="예: 펜션 반복 문의를 줄이고 싶어요"><textarea id="newDesc" placeholder="어떤 문제인지 적어주세요."></textarea><div class="talent-grid" id="talentGrid"></div><button class="btn violet" onclick="createProblem()">문제 등록</button></div></div></div>
+<div class="modal" id="authModal"><div class="modalbox"><div style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0">로그인 / 회원가입</h2><button class="btn ghost" onclick="closeAuth()">닫기</button></div><div class="notice" style="margin-top:12px">v8부터 회원가입·로그인뿐 아니라 문제글·참여자·프로젝트 게시글도 Supabase 공용 DB에 저장됩니다. 파일 업로드는 다음 단계에서 Storage로 연결합니다.</div><div class="authbox" style="margin-top:14px"><div class="authpane"><h3>로그인</h3><div class="form"><input id="loginEmail" placeholder="이메일"><input id="loginPassword" type="password" placeholder="비밀번호"><button class="btn dark" onclick="login()">로그인</button><div class="meta">실제 Supabase 계정으로 로그인합니다.</div></div></div><div class="authpane"><h3>회원가입</h3><div class="form"><input id="signupName" placeholder="이름"><input id="signupEmail" placeholder="이메일"><input id="signupPassword" type="password" placeholder="비밀번호 6자 이상"><button class="btn violet" onclick="signup()">회원가입</button></div></div></div></div></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+const SUPABASE_URL="https://fycfeqzqovnipyeiaewv.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY="sb_publishable_LolGsNL1mYDAD4wh9uDSOQ_Utd1Bwst";
+const sb=window.supabase.createClient(SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY);
+
+const TALENTS=['🤖 AI','⚙️ 자동화','💻 웹앱','🎨 디자인','🎬 영상','✍️ 글쓰기','📊 데이터','🧭 기획','📣 홍보'];
+let authUser=null;
+let projects=[];
+let profiles={};
+let filter='all';
+let currentId=null;
+let selectedTalents=[];
+let pendingAction=null;
+let loading=false;
+
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':'&quot;',"'":"&#039;"}[m]))}
+function label(s){return s==='open'?'🌱 참여 기다리는 중':s==='active'?'🔨 프로젝트 진행 중':'🚀 해결 완료'}
+function effectiveStatus(p){if(p.status==='done')return 'done';return p.people.length>=2?'active':'open'}
+function currentUser(){
+  if(!authUser)return null;
+  const p=profiles[authUser.id];
+  return {id:authUser.id,name:p?.display_name||authUser.user_metadata?.name||authUser.email?.split('@')[0]||'회원',email:authUser.email||'',role:p?.role||'member',blocked:p?.blocked||false};
+}
+function isAdmin(){return currentUser()?.role==='admin'}
+function userName(id){return profiles[id]?.display_name||((currentUser()?.id===id)?currentUser().name:'참여자')}
+function showOnly(id){['home','project','admin'].forEach(x=>document.getElementById(x).classList.toggle('show',x===id))}
+function showHome(){showOnly('home');renderHome()}
+function showAdmin(){alert('v9은 공용 DB + 파일 첨부에 집중한 버전입니다. 관리자 기능은 다음 단계에서 DB 권한과 함께 연결할게요.')}
+
+function toggleAccount(){
+  const u=currentUser();
+  if(!u){openAuth();return}
+  accountMenu.classList.toggle('show');
+  accountMenu.innerHTML=`<div style="padding:10px"><strong>${esc(u.name)}</strong><div class="meta">${esc(u.email)}</div><div class="meta" style="margin-top:4px">Supabase DB + Storage 연결</div></div><button class="btn danger small" onclick="logout()">로그아웃</button>`;
+}
+function renderAuthState(){
+  const u=currentUser();
+  accountBtn.textContent=u?`${u.name} ▾`:'로그인';
+  adminNav.classList.add('hidden');
+}
+function requireLogin(fn){if(currentUser())return fn();pendingAction=fn;openAuth()}
+function openAuth(){authModal.classList.add('show')}
+function closeAuth(){authModal.classList.remove('show')}
+
+async function initAuth(){
+  const {data:{session}}=await sb.auth.getSession();
+  authUser=session?.user||null;
+  await loadData();
+  sb.auth.onAuthStateChange((_event,session)=>{
+    authUser=session?.user||null;
+    setTimeout(()=>loadData(),0);
+  });
+}
+
+async function login(){
+  const email=loginEmail.value.trim().toLowerCase(),pw=loginPassword.value;
+  if(!email||!pw)return alert('이메일과 비밀번호를 입력해주세요.');
+  const {data,error}=await sb.auth.signInWithPassword({email,password:pw});
+  if(error)return alert('로그인 실패: '+error.message);
+  authUser=data.user;
+  await loadData();
+  closeAuth();
+  if(pendingAction){const f=pendingAction;pendingAction=null;await f()}
+}
+
+async function signup(){
+  const name=signupName.value.trim(),email=signupEmail.value.trim().toLowerCase(),pw=signupPassword.value;
+  if(!name||!email||pw.length<6)return alert('이름, 이메일, 6자 이상 비밀번호를 입력해주세요.');
+  const {data,error}=await sb.auth.signUp({email,password:pw,options:{data:{name}}});
+  if(error)return alert('회원가입 실패: '+error.message);
+  authUser=data.session?.user||null;
+  if(authUser){await loadData();closeAuth();alert('회원가입과 로그인이 완료되었습니다.');}
+  else alert('회원가입 완료! 이메일 인증 메일이 왔다면 인증 링크를 먼저 눌러주세요.');
+}
+
+async function logout(){
+  await sb.auth.signOut();
+  authUser=null;projects=[];profiles={};currentId=null;
+  accountMenu.classList.remove('show');
+  renderAll();showHome();
+}
+
+async function loadData(){
+  if(!authUser){projects=[];profiles={};loading=false;renderAll();return}
+  loading=true;renderHome();
+  const [pr,probs,parts,posts]=await Promise.all([
+    sb.from('profiles').select('id,display_name,role,blocked'),
+    sb.from('problems').select('id,owner_id,title,description,status,talents,hidden,created_at').order('created_at',{ascending:false}),
+    sb.from('participants').select('problem_id,user_id,participation_type,created_at'),
+    sb.from('project_posts').select('id,problem_id,author_id,kind,title,body,link_url,file_url,file_name,file_path,created_at').order('created_at',{ascending:false})
+  ]);
+  const err=pr.error||probs.error||parts.error||posts.error;
+  if(err){loading=false;console.error(err);alert('DB 불러오기 실패: '+err.message);renderAll();return}
+  profiles={};
+  (pr.data||[]).forEach(x=>profiles[x.id]=x);
+  const participantRows=parts.data||[],postRows=posts.data||[];
+  projects=(probs.data||[]).map(p=>({
+    id:p.id,title:p.title,desc:p.description,status:p.status,hidden:p.hidden,talents:p.talents||[],ownerId:p.owner_id,
+    people:participantRows.filter(x=>x.problem_id===p.id).map(x=>x.user_id),
+    posts:postRows.filter(x=>x.problem_id===p.id).map(x=>({id:x.id,kind:x.kind,title:x.title,body:x.body,authorId:x.author_id,link:x.link_url||'',fileUrl:x.file_url||'',fileName:x.file_name||'',filePath:x.file_path||''}))
+  }));
+  loading=false;renderAll();
+}
+
+function renderHome(){
+  filters.innerHTML=['all','open','active','done'].map(x=>`<button class="chip ${filter===x?'active':''}" onclick="setFilter('${x}')">${x==='all'?'전체':label(x)}</button>`).join('');
+  if(!authUser){board.innerHTML=`<div class="panel"><h3>👋 로그인하면 공용 게시판이 열립니다</h3><p class="meta" style="line-height:1.7">v9에서는 문제글·참여자·프로젝트 글과 첨부파일까지 Supabase에 저장됩니다.</p><button class="btn violet" style="margin-top:12px" onclick="openAuth()">로그인하기</button></div>`;return}
+  if(loading){board.innerHTML=`<div class="panel"><div class="meta">Supabase에서 공용 게시판을 불러오는 중...</div></div>`;return}
+  const visible=projects.filter(p=>!p.hidden&&(filter==='all'||effectiveStatus(p)===filter));
+  const u=currentUser();
+  board.innerHTML=visible.map(p=>{
+    const s=effectiveStatus(p),joined=!!u&&p.people.includes(u.id);
+    const action=s!=='done'?`<button class="btn ${joined?'ghost':'violet'}" onclick="event.stopPropagation();${joined?`openProject(${p.id})`:`currentId=${p.id};requireLogin(()=>joinCurrent(false))`}">${joined?'프로젝트 들어가기':'🙋 참여하고 들어가기'}</button>`:'';
+    return `<article class="post"><div class="post-top"><div style="flex:1" onclick="openProject(${p.id})"><span class="status ${s}">${label(s)}</span><h3>${esc(p.title)}</h3><p>${esc(p.desc)}</p><div class="tags">${p.talents.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div></div>${action}</div><div class="post-footer"><div class="people">${p.people.map(id=>`<span class="avatar" title="${esc(userName(id))}">${esc(userName(id).slice(0,2))}</span>`).join('')}<span class="meta">${p.people.length}명 참여</span></div><div class="meta">${esc(userName(p.ownerId))} 제안 · 내부 글 ${p.posts.length}개</div></div></article>`
+  }).join('')||`<div class="panel"><h3>아직 공용 문제글이 없습니다.</h3><div class="meta">첫 문제를 올려보세요. 이제 다른 회원에게도 같은 글이 보입니다.</div></div>`;
+}
+function setFilter(x){filter=x;renderHome()}
+function openProblemModal(){problemModal.classList.add('show');renderTalentGrid()}
+function closeProblemModal(){problemModal.classList.remove('show')}
+function toggleTalent(t){selectedTalents.includes(t)?selectedTalents=selectedTalents.filter(x=>x!==t):selectedTalents.push(t);renderTalentGrid()}
+function renderTalentGrid(){talentGrid.innerHTML=TALENTS.map(t=>`<button class="talent ${selectedTalents.includes(t)?'on':''}" onclick="toggleTalent('${t}')">${t}</button>`).join('')}
+
+async function createProblem(){
+  const u=currentUser(),title=newTitle.value.trim(),desc=newDesc.value.trim();
+  if(!u)return openAuth();
+  if(!title||!desc)return alert('제목과 문제 설명을 적어주세요.');
+  const talents=selectedTalents.length?selectedTalents:['🧭 기획'];
+  const {data,error}=await sb.from('problems').insert({owner_id:u.id,title,description:desc,status:'open',talents,hidden:false}).select().single();
+  if(error)return alert('문제 등록 실패: '+error.message);
+  const joinRes=await sb.from('participants').insert({problem_id:data.id,user_id:u.id,participation_type:'owner'});
+  if(joinRes.error)console.warn('작성자 참여 등록 실패',joinRes.error);
+  newTitle.value='';newDesc.value='';selectedTalents=[];closeProblemModal();
+  await loadData();
+  currentId=data.id;openProject(data.id);
+}
+
+function openProject(id){currentId=Number(id);showOnly('project');renderProject()}
+function cur(){return projects.find(p=>p.id===currentId)}
+
+async function joinCurrent(stay=false){
+  const u=currentUser(),p=cur();if(!u||!p)return;
+  if(!p.people.includes(u.id)){
+    const {error}=await sb.from('participants').insert({problem_id:p.id,user_id:u.id,participation_type:'member'});
+    if(error&&error.code!=='23505')return alert('참여 등록 실패: '+error.message);
+    const notice=await sb.from('project_posts').insert({problem_id:p.id,author_id:u.id,kind:'공지',title:`${u.name}님이 참여했습니다`,body:'새 참여자가 프로젝트에 들어왔습니다.',link_url:null});
+    if(notice.error)console.warn('참여 공지 등록 실패',notice.error);
+  }
+  await loadData();
+  currentId=p.id;
+  if(stay)showHome();else{showOnly('project');renderProject()}
+}
+
+function renderProject(){
+  const p=cur();if(!p)return showHome();
+  const s=effectiveStatus(p),u=currentUser(),joined=!!u&&p.people.includes(u.id);
+  pStatus.className=`status ${s}`;pStatus.textContent=label(s);pTitle.textContent=p.title;pDesc.textContent=p.desc;
+  pTags.innerHTML=p.talents.map(t=>`<span class="tag">${esc(t)}</span>`).join('');
+  pPeople.innerHTML=p.people.map(id=>`<span class="avatar" title="${esc(userName(id))}">${esc(userName(id).slice(0,2))}</span>`).join('')+`<span class="meta">${p.people.length}명 참여</span>`;
+  joinBtn.style.display=s==='done'?'none':'inline-flex';joinBtn.textContent=joined?'✓ 참여중':'🙋 참여하고 들어가기';joinBtn.className=`btn ${joined?'ghost':'violet'}`;
+  completeBtn.classList.toggle('hidden',!(u&&u.id===p.ownerId));completeBtn.textContent=s==='done'?'다시 진행':'완료 처리';
+  innerBoard.innerHTML=p.posts.map(postHtml).join('')||`<div class="meta">아직 프로젝트 내부 글이 없습니다.</div>`;
+  fileBoard.innerHTML=p.posts.filter(x=>['자료','결과물'].includes(x.kind)).map(postHtml).join('')||`<div class="meta">아직 자료나 결과물이 없습니다.</div>`;
+  memberBoard.innerHTML=p.people.map(id=>`<div class="member"><div style="display:flex;gap:9px;align-items:center"><span class="avatar">${esc(userName(id).slice(0,2))}</span><strong>${esc(userName(id))}</strong></div><span class="meta">${id===p.ownerId?'제안자':'참여중'}</span></div>`).join('');
+  sideStatus.innerHTML=`<div class="innerpost"><strong>${label(s)}</strong><p>${s==='open'?'참여자를 기다리는 중입니다.':s==='active'?'프로젝트 내부에서 협업 중입니다.':'완료된 프로젝트입니다.'}</p></div>`;
+  sideTalents.innerHTML=p.talents.map(t=>`<span class="tag">${esc(t)}</span>`).join('');
+  innerPostForm.classList.toggle('hidden',!u||!joined||s==='done');
+}
+function isImageFile(name,url){return /\.(png|jpe?g|gif|webp|bmp|svg)$/i.test(name||'')||/\.(png|jpe?g|gif|webp|bmp|svg)(\?|$)/i.test(url||'')}
+function postHtml(x){
+  const file=x.fileUrl?`<div class="attachment">${isImageFile(x.fileName,x.fileUrl)?`<a href="${esc(x.fileUrl)}" target="_blank" rel="noopener"><img src="${esc(x.fileUrl)}" alt="${esc(x.fileName||'첨부 이미지')}"></a>`:''}<a href="${esc(x.fileUrl)}" target="_blank" rel="noopener">📎 ${esc(x.fileName||'첨부파일 열기')} →</a></div>`:'';
+  return `<div class="innerpost"><span class="kind">${esc(x.kind)}</span><strong>${esc(x.title)}</strong><p>${esc(x.body)}</p><div class="meta">${esc(userName(x.authorId))}</div>${x.link?`<div style="margin-top:8px"><a href="${esc(x.link)}" target="_blank" rel="noopener">🔗 링크 열기 →</a></div>`:''}${file}</div>`
+}
+function switchTab(id,btn){document.querySelectorAll('.pane').forEach(x=>x.classList.add('hidden'));document.getElementById(id).classList.remove('hidden');document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));btn.classList.add('on')}
+
+async function addInnerPost(){
+  const u=currentUser(),p=cur();if(!u||!p)return;
+  if(!p.people.includes(u.id))return alert('먼저 프로젝트에 참여해주세요.');
+  const title=innerTitle.value.trim(),body=innerBody.value.trim(),link=innerLink.value.trim(),file=innerFile.files[0];
+  if(!title||!body)return alert('제목과 내용을 적어주세요.');
+  if(file&&file.size>10*1024*1024)return alert('첨부파일은 10MB 이하만 올릴 수 있습니다.');
+
+  let fileUrl=null,fileName=null,filePath=null;
+  const btn=document.getElementById('innerSubmitBtn');
+  const oldText=btn.textContent;
+  btn.disabled=true;btn.textContent=file?'파일 업로드 중...':'글 저장 중...';
+
+  try{
+    if(file){
+      const safeName=(file.name||'file').normalize('NFKC').replace(/[^0-9A-Za-z가-힣._-]+/g,'_').slice(-120);
+      const rand=(window.crypto&&crypto.randomUUID)?crypto.randomUUID().slice(0,8):Math.random().toString(36).slice(2,10);
+      filePath=`${u.id}/${p.id}/${Date.now()}-${rand}-${safeName}`;
+      const {error:uploadError}=await sb.storage.from('project-files').upload(filePath,file,{cacheControl:'3600',upsert:false,contentType:file.type||undefined});
+      if(uploadError)throw new Error('파일 업로드 실패: '+uploadError.message);
+      const {data:pub}=sb.storage.from('project-files').getPublicUrl(filePath);
+      fileUrl=pub?.publicUrl||null;
+      fileName=file.name||safeName;
+    }
+
+    const {error}=await sb.from('project_posts').insert({
+      problem_id:p.id,author_id:u.id,kind:innerKind.value,title,body,link_url:link||null,
+      file_url:fileUrl,file_name:fileName,file_path:filePath
+    });
+    if(error){
+      if(filePath)await sb.storage.from('project-files').remove([filePath]);
+      throw new Error('글 등록 실패: '+error.message);
+    }
+
+    innerTitle.value='';innerBody.value='';innerLink.value='';innerFile.value='';
+    await loadData();currentId=p.id;renderProject();
+  }catch(err){
+    console.error(err);alert(err.message||String(err));
+  }finally{
+    btn.disabled=false;btn.textContent=oldText;
+  }
+}
+
+async function toggleComplete(){
+  const u=currentUser(),p=cur();if(!u||!p)return;
+  if(u.id!==p.ownerId)return alert('문제를 제안한 사람만 완료 처리할 수 있습니다.');
+  const next=effectiveStatus(p)==='done'?(p.people.length>=2?'active':'open'):'done';
+  const {error}=await sb.from('problems').update({status:next}).eq('id',p.id);
+  if(error)return alert('상태 변경 실패: '+error.message);
+  await loadData();currentId=p.id;renderProject();
+}
+
+function renderAdmin(){}
+function toggleRole(){alert('다음 버전에서 연결합니다.')}
+function toggleBlock(){alert('다음 버전에서 연결합니다.')}
+function adminCycleStatus(){alert('다음 버전에서 연결합니다.')}
+function toggleHidden(){alert('다음 버전에서 연결합니다.')}
+function renderAll(){renderAuthState();renderHome();if(currentId&&projects.some(p=>p.id===currentId))renderProject()}
+
+initAuth();
+</script></body></html>
